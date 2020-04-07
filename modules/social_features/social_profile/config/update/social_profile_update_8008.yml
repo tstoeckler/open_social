@@ -1,0 +1,10 @@
+field.field.profile.profile.field_profile_image:
+  expected_config:
+    settings:
+      default_image:
+        title: 'Default profile image'
+  update_actions:
+    change:
+      settings:
+        default_image:
+          title: ''
