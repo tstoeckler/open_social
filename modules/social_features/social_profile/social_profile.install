@@ -312,7 +312,7 @@ function social_profile_update_8007(&$sandbox) {
 }
 
 /**
- * Remove title property from field_profile_image
+ * Remove title property from field_profile_image.
  */
 function social_profile_update_8008() {
   /** @var \Drupal\update_helper\Updater $updateHelper */
