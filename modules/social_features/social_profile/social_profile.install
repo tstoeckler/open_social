@@ -324,3 +324,15 @@ function social_profile_update_8008() {
   // Output logged messages to related channel of update execution.
   return $updateHelper->logger()->output();
 }
+
+/**
+ * Implements hook_update_dependencies().
+ */
+function social_profile_update_dependencies() {
+  // Run the config update after the update_helper module is enabled.
+  $dependencies['social_profile'][8808] = [
+    'social_core' => 8805,
+  ];
+
+  return $dependencies;
+}
